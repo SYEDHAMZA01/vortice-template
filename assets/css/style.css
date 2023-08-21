@@ -1,0 +1,830 @@
+:root {
+    --color-1: #050509;
+    --color-2: #14171F;
+    --color-3: #151B28;
+    --color-4: #181C29;
+    --color-5: #424242;
+    --color-6: #141218;
+    --color-7: #BFBFCB;
+    --color-8: #1EBC26;
+    --color-9: #5CAB60;
+    --color-white: #ffffff;
+    --transparent: transparent;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color: var(--color-white);
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.divider-right {
+    border-left: 0.73px solid #5e5c5c;
+}
+
+.btn-success {
+    background-color: var(--color-8);
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    border-color: var(--color-8);
+    background-color: var(--color-8);
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.btn-outline-success {
+    border-color: var(--color-8);
+    color: var(--color-8);
+}
+
+
+.btn-outline-success:hover {
+    border-color: var(--color-8);
+    background-color: var(--color-8);
+    color: var(--color-white);
+}
+
+.btn-outline-light {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.border-end {
+    border-color: var(--color-5) !important;
+}
+
+.border-bottom {
+    border-color: var(--color-5) !important;
+}
+
+/* navbar */
+
+.bg-body-tertiary {
+    background-color: var(--color-6) !important;
+}
+
+.navbar .nav-link {
+    color: var(--color-7);
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding: 8px 15px !important;
+}
+
+.navbar .nav-item .btn {
+    padding: 4px 8px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--color-7);
+    font-weight: 600;
+}
+
+/* hero section */
+
+.hero {
+    background-image: url(../images/hero-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+
+.hero-content {
+    margin-top: -60px;
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.main-heading {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.hero-sub-heading {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 930px;
+}
+
+/* database */
+
+.our-database {
+    padding: 80px 0;
+    margin-top: -20px;
+    border-top: 0.73px solid #5e5c5c;
+    position: relative;
+}
+
+.our-database .container {
+    max-width: 950px !important;
+}
+
+.our-database::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    left: 0;
+    border-bottom: 0.73px solid #5e5c5c;
+}
+
+.database-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.database-number {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.database-card-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+/* available Games  */
+
+/* .availabile-games{
+
+} */
+
+.availabile-games .main-heading {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0em;
+}
+
+.availabile-games-cards {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.availabile-games .sub-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.availabile-games-card {
+    max-width: 412px;
+    height: 500px;
+    border-radius: 75px 25px 150px 25px;
+    overflow: hidden;
+}
+
+#availabile-games-slides{
+    margin: 50px auto 100px;
+}
+
+.availabile-games-card .availabile-games-card-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.availabile-games-card-bg.card-bg-1 {
+    background-image: url(../images/COD\ Game.png);
+}
+
+.availabile-games-card-bg.card-bg-2 {
+    background-image: url(../images/e-football\ Game.png);
+}
+
+.availabile-games-card-bg.card-bg-3 {
+    background-image: url(../images/PUBG\ Game.png);
+}
+
+.availabile-games-card-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+}
+
+.availabile-games-card .card-details {
+    padding: 25px 25px 0;
+}
+
+.availabile-games-card .card-heading {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.availabile-games-card .card-sub-heading {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+/* tournament section */
+
+.tournament {
+    margin-bottom: 150px;
+}
+
+.tournament-heading {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.tournament-sub-heading {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* card */
+.tournament-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    background-color: var(--color-2);
+    padding: 24px;
+}
+
+.tournament-card .tournament-time-table,
+.tournament-card .menu-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #ADB5BD;
+}
+
+.tournament-card .tournament-game-name {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.badge {
+    padding: 7px 14px;
+    border-radius: 7px;
+    background: #212529;
+    color: #495057;
+}
+
+.tournament-card .menu-name {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-footer {
+    background-color: var(--color-4);
+}
+
+.tournament-card .card-footer .profile-label,
+.tournament-card .card-footer .profile-name {
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #6C757D;
+}
+
+.tournament-card .btn {
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+/* leaderboard */
+
+.leaderboard {
+    background-color: var(--color-2);
+    padding: 80px 0;
+}
+
+.leaderboard-item{
+    max-width: 305px;
+}
+
+.leaderboard-card {
+    background: #1A1A20;
+    border-radius: 8px;
+}
+
+.leaderboard-body {
+    padding: 20px 20px 0px;
+    border-bottom: 1px solid #2F2F36;
+}
+
+.leaderboard-body span {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0px;
+}
+
+.leaderboard-card .progress-box {
+    min-height: 170px;
+    padding-top: 16px;
+}
+
+.leaderboard-card .progress-line {
+    width: 24px;
+    background: linear-gradient(180deg, #43F334 0%, rgba(118, 249, 202, 0.5) 100%);
+    border-radius: 2px 2px 0px 0px;
+}
+
+.leaderboard-card .progress-table .list-group-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+    border: 0;
+    color: var(--color-white);
+    height: 40px;
+    padding: 0 20px;
+}
+
+.leaderboard-card .progress-table .list-group-item span {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.leaderboard-card .progress-table .list-group-item img {
+    height: 16px;
+    width: 16px;
+}
+
+.leaderboard-card .progress-table .list-group-item:nth-child(even) {
+    background: #15151A;
+}
+
+/* compitions */
+
+.compitions,
+.compitions-2 {
+    background-color: var(--color-8);
+    padding: 100px 0;
+}
+
+.compitions-2 {
+    background-color: var(--color-2);
+}
+
+.compitions-card {
+    max-width: 406px;
+}
+
+.compitions-2 .compitions-card {
+    box-shadow: 0px 0px 0px 4px #3184FD80;
+    max-width: 460px;
+}
+
+.compitions-2 .menu-name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.compitions-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    background-color: var(--color-2);
+    padding: 15px;
+}
+
+.compitions .compitions-main-heading,
+.leaderboard .leaderboard-main-heading {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.compitions .compitions-sub-heading,
+.leaderboard .leaderboard-sub-heading {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+
+.compitions-card .menu-title,
+.compitions-card .card-time-table {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0px;
+    color: #ADB5BD;
+}
+
+.compitions-card .compitions-game-name {
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+.compitions-card .card-footer .profile-label,
+.compitions-card .card-footer .profile-name {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #6C757D;
+}
+
+.compitions .card-footer .card-profile img {
+    height: 26px;
+    width: 26px;
+}
+
+.compitions-2 .card-footer .card-profile img {
+    height: 55px;
+    width: 55px;
+}
+
+.compitions-2 .profile-label,
+.compitions-2 .profile-name {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+/* pricing */
+
+.pricing {
+    padding: 150px 0;
+}
+
+.pricing .main-heading {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.pricing .sub-heading {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 32px;
+    border: 1px solid #343A40;
+    background-image: linear-gradient(0deg, #343A40, #343A40),
+        linear-gradient(0deg, #212529, #212529);
+}
+
+
+.pricing-card:hover {
+    background: linear-gradient(0deg, #343A40, #343A40),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.pricing .pricing-title {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.pricing .pricing-sub-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+
+.pricing .list-group-item {
+    border: none;
+    background-color: var(--transparent);
+    padding: 6px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* announscement */
+
+
+.announscement {
+    background-color: var(--color-2);
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+.announscement .main-heading {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.announscement .card {
+    background-color: var(--color-1);
+    box-shadow: 0px 1px 2px 0px #1018280A;
+    border: 1px solid #F8F9FA;
+}
+
+.announscement .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 24px;
+}
+
+.announscement .card-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: var(--color-white);
+}
+
+.announscement .card-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--color-3);
+    padding: 80px 0;
+}
+
+.call-to-action .title {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+}
+
+.footer-links {
+    border-top: 1px solid #2E3545;
+    border-bottom: 1px solid #2E3545;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.footer .footer-desc {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    max-width: 245px;
+}
+
+.footer .footer-sub-title,
+.footer-items .link-item {
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -0.10000000149011612px;
+    color: var(--color-white);
+}
+
+.footer .footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-items {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer .footer-bar {
+    padding-top: 24px;
+}
+
+/* @media screen and (max-width: 1400px) {
+    
+} */
+
+
+@media screen and (max-width: 786px) {
+    .our-database .row .border-end:nth-child(3) {
+        border: none !important;
+    }
+
+    .tournament-heading,
+    .availabile-games .main-heading,
+    .main-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .tournament-sub-heading,
+    .availabile-games .sub-title,
+    .hero-sub-heading {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .database-title {
+        margin-bottom: 10px;
+    }
+
+    .tournament-card .card-body {
+        padding: 15px;
+    }
+
+    .tournament-card .card-body img {
+        width: 80px;
+    }
+
+    .tournament-card .tournament-time-table,
+    .tournament-card .menu-title {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .tournament-card .tournament-game-name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .tournament-menu {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 20px 0px;
+    }
+
+    .menu-items {
+        width: 50%;
+    }
+
+    .tournament-card .menu-name {
+        font-size: 18px;
+    }
+
+    .tournament-card .menu-name svg {
+        width: 18px;
+    }
+
+    .tournament-card .card-footer .profile-label,
+    .tournament-card .card-footer .profile-name {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tournament-card .btn,
+    .compitions-2 .card-footer .btn {
+        padding: 6px 8px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .tournament-card .card-profile img,
+    .compitions-2 .card-footer .card-profile img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .competitions-menu {
+        flex-wrap: wrap;
+        gap: 12px 0;
+    }
+}
