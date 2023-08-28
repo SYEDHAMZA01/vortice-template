@@ -115,6 +115,73 @@ a {
     font-weight: 600;
 }
 
+/*.sign */
+
+.sign .right .logo{
+    width: 300px;
+    object-fit: cover;
+}
+
+.sign .left{
+    background-image: url("../images/banner-3.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.sign .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #060413;
+    padding: 70px 0;
+}
+
+.form-label {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.form-control {
+    height: 48px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-white);
+    background-color: #212529 !important;
+    color: var(--color-white) !important;
+    box-shadow: none !important;
+    border-color: var(--color-white) !important;
+}
+
+.input-group-text{
+    background-color: #212529 !important;
+}
+
+.form-control::-webkit-input-placeholder{
+    color: #ADB5BD !important;
+}
+
+
+.text-success{
+    color: var(--color-8) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-8);
+    border-color: var(--color-8);
+}
+
+.form-check-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(30,188,38,0.25);
+}
 /* hero section */
 
 .hero {
